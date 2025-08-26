@@ -13,7 +13,7 @@ function calcular() {
 
   if (!resultado) {
     let Elementoresultado = (document.getElementById("result").innerHTML =
-      "Ingresa um valor valido");
+      "Valor Inválido");
     return 1;
   }
 
@@ -23,15 +23,14 @@ function calcular() {
   let imagenCurseada = document.querySelector("img");
   let miSrc = imagenCurseada.getAttribute("src");
   if (resultado > 30) {
-    imagenCurseada.setAttribute("src", "img/ThorGoWR.webp");
+    imagenCurseada.setAttribute("src", ""); 
   } else if (resultado > 25 && resultado < 29.99) {
-    imagenCurseada.setAttribute("src", "img/majin.jpg");
+    imagenCurseada.setAttribute("src", "");
   } else if (resultado > 18.5 && resultado < 24.9) {
-    imagenCurseada.setAttribute("src", "img/star-platinum-power-pose-f5lg7apgc2c4wjdv-f5lg7apgc2c4wjdv.jpg");
+    imagenCurseada.setAttribute("src", "");
   } else if (resultado < 18.5) {
-    imagenCurseada.setAttribute("src", "img/Evil_buu.webp");
+    imagenCurseada.setAttribute("src", "");
   } else {
-    imagenCurseada.setAttribute("src", "img/MajinBuuKidDebutNV.webp");
+    imagenCurseada.setAttribute("src", "");
   }
 }
-// cu save
