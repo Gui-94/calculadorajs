@@ -37,7 +37,7 @@
             />
           </div>
           <div>
-            <label for="altura">Altura</label>
+              <label for="altura">Altura</label>
             <input
               type="text"
               placeholder="Exemplo: 1,75"
@@ -65,9 +65,30 @@
             />
         </section>
       </div>
-
     </div>
   </body>
 </html>
- 
+<script>
+  function apenasNumeros(e) {
+    const char = String.fromCharCode(e.which);
+    if (!/[0-9,\.]/.test(char)) { // permite números, vírgula e ponto
+      e.preventDefault();
+    }
+  }
+
+  // Seleciona os campos existentes
+  const pesoInput = document.getElementById('peso');
+  const alturaInput = document.getElementById('altura');
+
+  // Adiciona o evento de bloqueio de letras
+  pesoInput.addEventListener('keypress', apenasNumeros);
+  alturaInput.addEventListener('keypress', apenasNumeros);
+
+  // Limita quantidade de caracteres
+  pesoInput.setAttribute('maxlength', '3'); // Peso até 3 dígitos
+  alturaInput.setAttribute('maxlength', '4'); // Altura ex: 1,75
+</script>
+</body>
+</html>
+
 <!--save>

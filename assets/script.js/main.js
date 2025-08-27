@@ -22,15 +22,13 @@ function calcular() {
 
   let imagenCurseada = document.querySelector("img");
   let miSrc = imagenCurseada.getAttribute("src");
-  if (resultado > 30) {
-    imagenCurseada.setAttribute("src", ""); 
-  } else if (resultado > 25 && resultado < 29.99) {
-    imagenCurseada.setAttribute("src", "");
-  } else if (resultado > 18.5 && resultado < 24.9) {
-    imagenCurseada.setAttribute("src", "");
+  if (resultado > 30) { 
+  } else if (resultado > 25 && resultado) {
+    imagenCurseada.setAttribute("src", "./assets/img/sobrepeso.jpg");
+  } else if (resultado > 18.6 && resultado < 25) {imagenCurseada.setAttribute ("src", "./assets/img/normal.webp");
   } else if (resultado < 18.5) {
-    imagenCurseada.setAttribute("src", "");
+    imagenCurseada.setAttribute("src", "./assets/img/magro2.jpg");
   } else {
-    imagenCurseada.setAttribute("src", "");
+    imagenCurseada.setAttribute("src", "");  
   }
 }
