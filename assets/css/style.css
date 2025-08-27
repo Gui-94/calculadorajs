@@ -29,12 +29,12 @@ h1 {
   letter-spacing: 2px;
 }
 .contenedor {
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin: 3rem auto;
-  max-width: 500px;
+  max-width: 750px;
   width: auto;
   height: auto;
   border-left: 5px solid #f91616;
@@ -58,16 +58,16 @@ h3 {
   overflow: hidden;
 }
 h3::after {
-  content: "Pruebame!";
+  content: "E-G-L";
   position: absolute;
   top: 0;
   left: -100%;
   width: 100%;
   height: 100%;
-  background: rgba(128, 128, 128, 0.24);
+  background: rgba(0, 0, 0);
   transform: skewX(-20deg);
-  transition: left 0.5s;
-  transition: ease-out 5s;
+  transition: left 0.1s;
+  transition: ease-out 10s;
 }
 h3:hover::after {
   transition: ease 3s;
@@ -81,7 +81,7 @@ h3:hover::after {
   gap: 15px;
 }
 label {
-  width: 70%;
+  width: 88%;
   margin: auto;
   box-shadow: 0px 3px 1px 1px rgb(0, 0, 0);
   padding: 5px;
@@ -89,9 +89,9 @@ label {
   color: #eee;
   display: block;
   font-size: 18px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 input {
   margin-top: 1rem;
@@ -132,12 +132,12 @@ input::placeholder {
 }
 .boton {
   letter-spacing: 3px;
-  width: 50%;
+  width: 55%;
   padding: 10px;
   color: #000;
   cursor: pointer;
   font-size: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 0px 3px 2px 1px rgb(0, 0, 0);
 }
 button {
@@ -151,7 +151,7 @@ button::after {
   left: -100%;
   width: 50%;
   height: 100%;
-  background: rgba(76, 161, 246, 0.541);
+  background: rgba(0, 0, 0, 0.541);
   transform: skewX(-20deg);
   transition: left 0.5s;
 }
@@ -173,7 +173,7 @@ section {
   margin: 2rem auto;
   width: 50%;
   height: 8rem;
-  border-radius: 15px;
+  border-radius: 25px;
 }
 .are_result h2 {
   margin-top: 20px;
@@ -215,10 +215,10 @@ a:hover {
   object-fit: contain;
 }
 img {
-  width: 100%;
+  width: 144%;
   border-radius: 5px;
 
-  height: 100%;
+  height: 133%;
 }
 .are_result {
   display: grid;
@@ -323,4 +323,77 @@ img {
   #result {
     width: 90%;
   }
+}
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif ;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+}
+
+footer {
+  background: linear-gradient(#272623); /* degrade top */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  display: grid;
+  gap: 20px;
+}
+
+footer h6 {
+  margin-bottom: 5px;
+  font-size: 1.0rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+footer a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 5px #f70000;
+}
+
+footer p {
+  font-size: 0.9rem;
+  opacity: 1.0;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 55px;
+}
+
+.social a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 55%;
+  background: rgba(255,255,255,0.1);
+  transition: 0.3s;
+}
+
+.social a:hover {
+  background: #53ff03;
+  transform: scale(1.1);
 }
