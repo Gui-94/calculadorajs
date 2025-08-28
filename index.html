@@ -71,35 +71,16 @@
 <script>
   function apenasNumeros(e) {
     const char = String.fromCharCode(e.which);
-    if (!/[0-9,\.]/.test(char)) { // permite números, vírgula e ponto
+    if (!/[0-9,\.]/.test(char)) { 
       e.preventDefault();
     }
   }
-
-  // Seleciona os campos existentes
   const pesoInput = document.getElementById('peso');
   const alturaInput = document.getElementById('altura');
-
-  // Adiciona o evento de bloqueio de letras
   pesoInput.addEventListener('keypress', apenasNumeros);
   alturaInput.addEventListener('keypress', apenasNumeros);
-
-  // Limita quantidade de caracteres
-  pesoInput.setAttribute('maxlength', '3'); // Peso até 3 dígitos
-  alturaInput.setAttribute('maxlength', '4'); // Altura ex: 1,75
+  pesoInput.setAttribute('maxlength', '3'); 
+  alturaInput.setAttribute('maxlength', '4'); 
 </script>
 </body>
 </html>
-
-<!--save>
-      <footer> 
-        <a href="https://github.com/Parise2312"> Eduardo</a> 
-        <a href="https://github.com/Gui-94"> Guilherme</a> 
-        <a href="https://github.com/Caabraldev"> Lucas</a> 
-        <p>&copy; 2025 Eduardo, Guilherme, Lucascabral Todos os direitos reservados etc.</p>
-      </footer>
-
-    </div>
-  </body>
-</html>
- 
