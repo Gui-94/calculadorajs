@@ -22,7 +22,7 @@ body {
 h1 {
   text-align: center;
   margin: 1rem auto;
-  color: #ecf0f1;
+  color: #5e03f1;
   font-size: 1.8rem;
   max-width: 30rem;
   width: auto;
@@ -58,7 +58,7 @@ h3 {
   overflow: hidden;
 }
 h3::after {
-  content: "E-G-L";
+  content: "guilindo";
   position: absolute;
   top: 0;
   left: -100%;
